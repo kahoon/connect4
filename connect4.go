@@ -89,6 +89,12 @@ func win() {
 	os.Exit(0)
 }
 
+func draw() {
+	display()
+	fmt.Printf("Draw!!!\n\n")
+	os.Exit(0)
+}
+
 func analyze() {
 	var match int
 	var color int
@@ -172,6 +178,15 @@ func analyze() {
 			}
 		}
 	}
+	// check for draw
+	for x := range X {
+		for y := range Y {
+			if game[x][y] == 0 {
+				return
+			}
+		}
+	}
+	draw()
 }
 
 func main() {
