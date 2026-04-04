@@ -1,3 +1,3 @@
 # connect4
 
-`connect4` is a text based connec4 game written in Go! 
+`connect4` is a text based connect4 game written in Go! 
